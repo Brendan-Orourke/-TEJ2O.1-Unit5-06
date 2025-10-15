@@ -2,7 +2,7 @@
  *
  * Created by: Brendan O'Rourke
  * Created on: Sep 2025
- * This program ...
+ * This program calculates the distance using sonar
 */
 
 // variables
