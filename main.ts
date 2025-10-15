@@ -1,8 +1,27 @@
 /* Copyright (c) 2020 MTHS All rights reserved
  *
- * Created by: XXX
- * Created on: Sep 2020
+ * Created by: Brendan O'Rourke
+ * Created on: Sep 2025
  * This program ...
 */
 
-basic.showString('Hello, World!')
+// variables
+let distanceTooObject = 0
+
+// setup
+basic.clearScreen()
+basic.showIcon(IconNames.Happy)
+
+// calculate the distance
+input.onButtonPressed(Button.A, function () {
+    distanceTooObject = sonar.ping(
+    DigitalPin.P1,
+    DigitalPin.P2,
+    PingUnit.Centimeters
+)
+basic.clearScreen()
+basic.showNumber (distanceTooObject)
+basic.showIcon(IconNames.Happy)
+})
+
+
